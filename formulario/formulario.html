@@ -5,36 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ac562f7988.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/music-solid.svg">
-    <title>Document</title>
+    <title>Formulario de inscripción al newsletter</title>
 </head>
 <body>
     <a id="Principal" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Volver a la pagina principal </a>
     <br>
     <br>
-    <h2>Formulario de registro</h2>
+    <h2>Formulario de inscripción al newsletter</h2>
     <form action="recepcion.php" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Introduze tu nombre"><br><br>
-
-        <label for="email">Email</label>
-            
-        <textarea name="observaciones" id="observaciones" placeholder="Introduce tus comentarios" cols="80" rows="4">
+        <label for="nombre">Nombre:<br><input type="text" id="nombre" name="nombre" placeholder="Introduze tu nombre"><br><br></label>
+        <label for="apellidos">Apellidos:<br><input type="text" id="apellidos" name="apellidos" placeholder="Introduze tus apellidos"><br><br></label>
+        <label for="edad">Edad:<br><input type="text" id="edad" name="edad" placeholder="Introduze tu edad" ><br><br></label>
+        <label for="gmail">Email:<br><input type="email" name="email" placeholder="Introduze tu email" size="40"><br></label>
+        <label for="pais">Pais:<br></label>
+        <select>
+                <option value="españa">España</option>
+                <option value="francia">Francia</option>
+                <option value="alemania">Alemania</option>
+                <option value="inglaterra">Inglaterra</option>
+                <option value="otro">Otro país</option>
+            </select>
         </textarea>
         <br>
-        
-        <label for="ciudad">Ciudad</label><br>
-        <select name="ciudad" id="ciudad">
-            <option value="" disabled>Seleccione una ciudad</option>
-            <option value="Barcelona">Barcelona</option>
-            <option value="Madrid">Madrid</option>
-            <option value="Valencia">Valencia</option>
-            <option value="Sevilla">Sevilla</option>
-            <option value="Granada">Granada</option>
-            <option value="Murcia">Murcia</option>
-        </select>
         <br>
         <br>
-        <button type="submit">Enviar datos</button><button type="reset">Borrar los datos</button> 
+        <button type="submit">Enviar datos</button> <button type="reset">Borrar los datos</button> 
     </form>
 </body>
 </html>
