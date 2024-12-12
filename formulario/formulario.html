@@ -8,9 +8,18 @@
     <title>Formulario de inscripción al newsletter</title>
 </head>
 <body>
-    <a id="Principal" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Volver a la pagina principal </a>
-    <br>
-    <br>
+    <ul>
+        <li><a href="../index.html">Inicio</a>
+        <li><a href="../discografia/discografia.html">Discografía</a>
+            <ul>
+                <li><a href="../albums/nigth_visions.html">Nigth Visions</a></li>
+                <li><a href="../albums/evolve.html">Evolve</a></li>
+                <li><a href="../albums/origins.html">Origins</a></li>
+            </ul>
+        </li>
+        <li><a href="./formulario.html">Formulario</a></li>
+    </ul>
+    <hr>
     <h2>Formulario de inscripción al newsletter</h2>
     <form action="recepcion.php" method="post">
         <label for="nombre">Nombre:<br><input type="text" id="nombre" name="nombre" placeholder="Introduze tu nombre"><br><br></label>
@@ -25,6 +34,17 @@
                 <option value="inglaterra">Inglaterra</option>
                 <option value="otro">Otro país</option>
             </select>
+            <fieldset>
+                <legend>Intereses</legend>
+                <label for="conciertos">Conciertos</label>
+                <input type="checkbox" id="conciertos" name="nacionalidad" value="conciertos">
+    
+                <label for="albumes">Albumes</label>
+                <input type="checkbox" id="albumes" name="nacionalidad" value="albumes">
+    
+                <label for="canciones">Canciones</label>
+                <input type="checkbox" id="canciones" name="nacionalidad" value="canciones">
+            </fieldset>
         </textarea>
         <br>
         <br>
